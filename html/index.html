@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Hot Restaurant</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Hot Restaurant</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    <h1>This is an awesome restaurant app!</h1>
-    <script src=script.js></script>
-    <script src=server.js></script>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">
+                <span class="glyphicon glyphicon-fire"></span> Hot Restaurant
+            </h1>
+            <hr>
+            <h2 class="text-center">Book your seat before theyre all gone!</h2>
+            <br>
+
+            <div class="text-center">
+                <a href="/openings">
+                    <button type="button" class="btn  btn-lg btn-primary">
+                        <span class="glyphicon glyphicon-th-list"></span>
+                        View Tables
+                    </button>
+                    <a href="/reserve">
+                        <button type="button" class="btn btn-lg btn-danger">
+                            <span class="glyphicon glyphicon-credit-card"></span> Make Reservation
+                        </button>
+                    </a>
+
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <footer class="footer">
+                    <a href="/api/tables">API Table Link</a> |
+                    <a href="/api/waitlist">API Wait List</a>
+                    </p>
+            </div>
+            </footer>
+        </div>
 </body>
+
 </html>
